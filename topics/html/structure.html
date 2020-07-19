@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Struktur</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Struktur im Projekt</h1>
+    </header>
+
+    <main>
+        <p>
+            Je umfangreicher eine Seite werden soll, desto mehr Code muss auch geschrieben werden. Üblicherweise hat
+            ein Html Dokument am Ende mehrere Hundert bis teilweise sogar Tausend Zeilen, um da noch den
+            Überblick zu behalten muss man das Dokument entsprechend strukturieren. Aber auch die Dateienanzahl ansich
+            kann schnell zunehmen, deswegen ist es genauso wichtig die verschiedenen Ordner in einer guten Sturktur zu
+            halten.
+        </p>
+        <div id="root">
+            <h3>Die Ordnerstrukur</h3>
+            <p>
+                Wie schon in <a href="../start/howto_get_started.html" class="intern_link">Wie fang ich an Schritt 2</a>
+                angesprochen hat man einen Ordner als "Arbeitsplatz". Er wird auch als "Root" (auf deutsch Wurzel)
+                bezeichnet und ist der Ausgangspunkt für alles weitere. Aus diesem Grund ist die Startseite (oft
+                index.html) auch dort meist die einzige Html-Datei. Alle weiteren werden in einem/ mehreren Unterordner/
+                n gespeichert (z.B. html). Auch CSS/ JavaScript - Dateien oder Bilder/ Videos sind in extra Ordnern um
+                alles schön übersichtlich zu halten.
+            </p>
+            <div>
+                <h4>So ist die Standard Ordnerstrukur</h4>
+                <img src="../../rsc/img_html/folder_structure.png" alt="Dieses Bild konnte nicht geladen werden :(">
+            </div>
+        </div>
+        <div>
+            <h3>Pfade?</h3>
+            <p>
+                Je mehr Unterordner ein Verzeichnis hat, desto länger werden auch die Pfade. Doch was sind diese Pfade
+                überhaupt und wofür braucht man sie?
+            </p>
+            <p>
+                Um zum Beispiel eine Datei zu verlinken oder einzubinden muss man dem Computer/ der Html-Seite sagen wo
+                sie diese Datei findet. Also kann man sagen, dass ein Pfad eine digitale Wegbeschreibung ist. Es gibt
+                dabei zwei Möglichkeiten einen Pfad anzugeben:
+            </p>
+            <div>
+                <h4>Absolute Pfadangaben</h4>
+                <p>
+                    Diese sind für Html eher nicht geeignet, denn diese beziehen sich immer auf das Stammverzeichnis des
+                    jeweiligen PC´s. Was bedeutet, wenn der Ordner mal verschoben wird sind alle Pfadangaben ungültig
+                    und müssen korrigiert werden.
+                </p>
+            </div>
+            <div>
+                <h4>Relative Pfadangaben</h4>
+                <p>
+                    Diese beziehen sich immer auf den jeweiligen <a href="#root">Wurzel-Ordner</a> und sollten deshalb
+                    auch bei Html verwendet werden. Hier gibt es nun verschiedene Optionen:
+                </p>
+                <p>
+                    Die Datei names test.png ist ein Beipiel und die beschriebenen Optionen zeigen wie man diese
+                    erreicht wenn sie an unterschiedlichen Orten gespeichert ist. Ausgangspunkt ist eine Html-Datei
+                    "bilder.html" und ein Bild "test.png" welches wir auf dieser einfügen möchten.
+                </p>
+                <table>
+                    <thead>
+                        <th>Angabe</th>
+                        <th>Ziel?</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt;img&nbsp;src="./test.png"&gt;</td>
+                            <td>Die Datei liegt im selben Ordner wie bilder.html (./ kann hier auch ganz weggelassen
+                                werden)</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;img&nbsp;src="./pics/test.png"&gt;</td>
+                            <td>Die Datei liegt im Ordner "pics", dieser wiederrum befindet sich im selben Ordner wie
+                                bilder.html</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;img&nbsp;src="../test.png"&gt;</td>
+                            <td>Die Datei liegt eine Ebene (Ordner) höher als bilder.html</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;img&nbsp;src="../pics/test.png"&gt;</td>
+                            <td>Die Datei liegt im Ordner "pics", welcher eine Ebene höher als bilder.html ist</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;img&nbsp;src="../../test.png"&gt;</td>
+                            <td>Die Datei liegt zwei Ebenen (Ordner) höher als bilder.html</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div>
+            <h3>1. Clean-Code</h3>
+            <p>
+                Um den Code gut zu strukturieren nutzt man Tabstops, Absätze und Leerzeilen. Außerdem ist es
+                hilfreich verschiedene <code>tags</code> nicht in die gleiche Zeile zu schreiben. Generell wird in
+                "Blöcken" geschrieben, diese können selbst auch wieder weitere "Blöcke" enthalten. Ein neuer BLock
+                beginnt dabei immer mit einem <code>tag</code> und endet mit dem <code>End-tag</code>. Für jeden neuen
+                <code>tag</code> welcher also in einem anderen geöffnet wird nutzt man einen Tabstop. Dies hat zur
+                Folge, dass je mehr <code>tags</code> "ineinander" verschachtelt werden die Zeile weiter rechts beginnt.
+                Auch wird oft nach einem abgeschlossenen Block eine Leerzeile gemacht, dies kommt aber auch immer auf
+                den Inhalt an. <br>
+                Generell kann man sich merken: Solange ein tag noch nicht geschlossen wurde, wird ein Tab anstelle des
+                end-tags gemacht, dies wird so lange fortgeführt, bis der tag geschlossen wurde. Man kann also sagen,
+                dass der Tabstop den Platz für den End-tag freihält.
+            </p>
+            <p>
+                Wenn ein <code>tag</code> zum Beispiel viel Text beinhaltet werden die
+                <code>öffnenden - und schließenden tags</code> immer in eine separate Zeile geschrieben. Generell kann
+                man sagen, wenn zwischen dem <code>tag-Paar</code> mehr als 80 Zeichen stehen schreibt man die
+                <code>tags</code> in jeweils separate Zeilen.
+            </p>
+        </div>
+        <div>
+            <h3>2. Clean-Head</h3>
+            <p>
+                Besonders bei Seiten welche viele externe Ressourcen brauchen bietet es sich an ihre Links ganz nach
+                unten zu schreiben um einen besseren Überblick zu behalten.
+            </p>
+            <p>
+                Zwar ist es möglich CSS Code direkt auf der Html Seite einzubetten, jedoch sollte dies wenn überhaupt
+                der letzte "Block" im Kopfbereich sein. Die
+                <a href="../css/basics.html" class="intern_link">Vorteile&nbsp;von&nbsp;CSS</a> in externen Dateien
+                werden hier beschrieben.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../index.html" title="Home"><img src="../../rsc/img_util/Home.png" alt="Home" width="60" height="auto"></a>
+    </footer>
+</body>
+
+</html>

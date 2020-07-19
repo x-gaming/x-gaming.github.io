@@ -1,0 +1,138 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+noscript {
+    display: block;
+    padding: 0.5em;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid medium black;
+}
+
+body {
+    margin: 1% 5% 0 10%;
+    background-color: #2E2E2E;
+    color: whitesmoke;
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#important {
+    padding: 1em;
+    border: dashed medium yellow;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+header {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(rgb(0, 0, 0), red, rgb(0, 0, 0));
+    background-color: red;
+}
+
+header h1, header h2 {
+    text-align: center;
+    text-shadow: black 8px 5px 2px;
+    font-size: 2em;
+}
+
+main {
+    margin-top: 4%;
+    width: auto;
+    min-height: 100%;
+    background-color: #1C1C1C;
+    box-shadow: 10px 10px 5px #6E6E6E;
+    padding: 2% 5%;
+    border-left: solid black thick;
+}
+
+main h3 {
+    width: 60%;
+    font-size: 1.3em;
+    padding: 0.4em;
+    background: linear-gradient(to right, rgb(10, 10, 10), rgba(255, 255, 255, 0.01));
+    border-radius: 0.3em;
+    border-bottom: solid thin grey;
+}
+
+main code {
+    font-size: larger;
+    background-color: rgba(75, 74, 75, 0.4);
+    border-radius: 2px;
+    color: whitesmoke;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+    font-size: 1em;
+}
+
+table thead th {
+    background-color: rgb(50, 50, 50);
+}
+
+table th, table td {
+    padding: 0.3em;
+    border: solid black thin;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(80, 80, 80);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(100, 100, 100);
+}
+
+table td:nth-child(3) {
+    text-align: center;
+}
+
+.intern_link {
+    padding: 0 0.2em;
+    color: rgb(0, 0, 255);
+    border-radius: 5px 2px;
+    border: solid thin black;
+}
+
+.quicktip {
+    padding: 0 0.2em;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    border-radius: 5px 2px;
+    border: solid thin rgb(100, 100, 100);
+}
+
+.intern_link:hover {
+    box-shadow: 2px 2px 8px black;
+}
+
+.non-list-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.example {
+    color: black;
+    border-radius: 10px;
+    background-color: rgba(250, 250, 250, 0.2);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    padding: 0.1em;
+}
+
+footer {
+    margin-top: 4.5em;
+    padding: 0.5em 0;
+    text-align: center;
+    border-top: solid thin silver;
+}
+
+footer img:hover {
+    transform: scale(0.9);
+}

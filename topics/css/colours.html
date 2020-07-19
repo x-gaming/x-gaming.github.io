@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Farben</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/style_colorTables.css">
+</head>
+
+<body>
+    <header>
+        <h1>Farben - colors</h1>
+    </header>
+
+    <main>
+        <div>
+            Farben haben eine besondere Wirkung und damit nicht alles so langweilig in Schwarz-Weiß ist, gibt es
+            natürlich auch Farben in CSS. Es gibt dabei ganz unterschiedliche Wege eine Seite farbig zu gestalten. Egal
+            ob nun der Text ansich, der Hintergrund oder geometrische Formen, irgendwie muss ein Wert für die
+            Eigenschaft <code>color</code> angegeben werden.
+        </div>
+        <div>
+            <h3>Farben mit Worten</h3>
+            <p>
+                Wenn man eine der 8 Grundfarben (Rot, Grün, Blau, Cyan, Magenta, Gelb, Weiß oder Schwarz) nutzen möchte
+                ist dies kein Problem. Man schreibt einfach den Namen auf englisch auf. Auch helle und dunkle Farbtöne
+                sind kein Problem man kann ja einfach "dark" oder "light" davor setzen und schon hat man die Farbe
+                definiert. Es gibt sogar Namen wie "olive" oder "navy" als Farbwert.
+            </p>
+        </div>
+        <div>
+            <h3>Farben mit Hex-Codes</h3>
+            <p>
+                Um aber auch wirklich jeden Farbton benutzen zu können gibt es die Farbcodes. Mit diesen kann man
+                genauso Farben mischen wie mit dem nachfolgenden RGB-Model. Jedoch gibt es diese schon länger denn sie
+                stammen aus der Anfangszeit von HTML.
+            </p>
+            <table class="colors">
+                <thead>
+                    <tr>
+                        <th>Hex-Code</th>
+                        <th>Farbe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="black">
+                        <td>#000000</td>
+                        <td>Schwarz:</td>
+                    </tr>
+                    <tr class="white">
+                        <td>#FFFFFF</td>
+                        <td>Weiß:</td>
+                    </tr>
+                    <tr class="red">
+                        <td>#FF0000</td>
+                        <td>Rot:</td>
+                    </tr>
+                    <tr class="green">
+                        <td>#00FF00</td>
+                        <td>Grün:</td>
+                    </tr>
+                    <tr class="blue">
+                        <td>#0101DF</td>
+                        <td>Blau:</td>
+                    </tr>
+                    <tr id="yellow">
+                        <td>#FFFF00</td>
+                        <td>Gelb:</td>
+                    </tr>
+                    <tr id="purple">
+                        <td>#4C0B5F</td>
+                        <td>Violet:</td>
+                    </tr>
+                    <tr id="orange">
+                        <td>#FF8000</td>
+                        <td>Orange:</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h3>Farben mit dem RGB-System</h3>
+            <p>
+                In CSS gibt es das RGB-System, mit welchen es möglich ist 16,7 Millionen verschiedene Farbwerte
+                einzustellen. Man nutzt hierfür die
+                Funktion <code>rgb(Rot,&nbsp;Grün,&nbsp;Blau);</code>. Für die verschieden Werte setzt man dann eine
+                Zahl zwischen 0 und 255 ein, je höher die gewählte Zahl desto mehr Anteil hat die jeweilige Farbe.
+                Übrigens, wenn alle
+                3 Werte gleich groß sind kommt immer ein Grauton raus. Zur Veranschaulichung hier nochmal ein paar
+                Beispiele.
+            </p>
+            <table class="colors">
+                <thead>
+                    <tr>
+                        <th>RGB-Wert</th>
+                        <th>Farbe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="black">
+                        <td>rgb(0,&nbsp;0,&nbsp;0)</td>
+                        <td>Schwarz</td>
+                    </tr>
+                    <tr class="white">
+                        <td>rgb(255,&nbsp;255,&nbsp;255)</td>
+                        <td>Weiß</td>
+                    </tr>
+                    <tr class="red">
+                        <td>rgb(255,&nbsp;0,&nbsp;0)</td>
+                        <td>Rot</td>
+                    </tr>
+                    <tr class="green">
+                        <td>rgb(0,&nbsp;255,&nbsp;0)</td>
+                        <td>Grün</td>
+                    </tr>
+                    <tr class="blue">
+                        <td>rgb(0,&nbsp;0,&nbsp;255)</td>
+                        <td>Blau</td>
+                    </tr>
+                    <tr id="grey">
+                        <td>rgb(100,&nbsp;100,&nbsp;100)</td>
+                        <td>Grau</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Farben mit dem RGBA-System</h3>
+            <p>
+                RGBA ist eine kleine Erweiterung des RGB-Systems, hier kommt noch der sogennate Alpha Kanal hinzu.
+                Dieser ist für Transparenz verantwortlich und kann einen Wert von 0.0 bis 1.0 annehmen, wobei diese
+                minmal und maximal Werte dem normalen RGB-System entsprechen und somit nicht genutzt werden. Wie man
+                schon erkennt ist eine Kommazahl erforderlich und die CSS-Funktion ist wie folgt:
+                <code>rgba(Rot,&nbsp;Grün,&nbsp;Blau,&nbsp;Alpha);</code> ein transparentes Schwarz hätte den Wert
+                <code>rgba(0,&nbsp;0,&nbsp;0,&nbsp;0.5);</code>.
+            </p>
+        </div>
+        <div>
+            <h3>Hilfen</h3>
+            <p>
+                Der Editor VSCode hat eine solche Funktion direkt mit eingebaut aber es gibt auch externe Seiten welche
+                einen Farbmischer zur Verfügung stellen damit man nicht jedesmal mühevoll die Werte per Hand ändern
+                muss.
+            </p>
+            <div>
+                <form>
+                    <legend>Ich hab aber hier auch eine kleine Hilfe:</legend>
+                    <input type="color">
+                </form>
+                <p>
+                    wenn du wissen willst wie ich das gemacht habe, schau mal in 
+                    <a href="../html/tipps.html" class="intern_link">Html-Tipps</a> vorbei.
+                </p>
+            </div>
+
+            <ul>
+                <li><a href="https://html-color-codes.info/" target="_blank">RGB Hex-Codes</a></li>
+                <li>
+                    <a href="https://developer.mozilla.org/de/docs/Web/CSS/CSS_Colors/farbauswahl_werkzeug"
+                        target="_blank">Farben aus dem RGBA-Raum</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <a href="../../index.html" title="Home"><img src="../../rsc/img_util/Home.png" alt="Home" width="60" height="auto"></a>
+    </footer>
+</body>
+
+</html>

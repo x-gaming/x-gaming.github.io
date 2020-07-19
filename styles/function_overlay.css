@@ -1,0 +1,39 @@
+.extend div {
+    display: none;
+    overflow: hidden;
+    top: 10%;
+    left: 10%;
+}
+
+.extend:hover .overlay {
+    width: 40vw;
+    height: auto;
+    display: block;
+    position: fixed;
+}
+
+.extend:hover {
+    cursor: crosshair;
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    color: whitesmoke;
+    padding: 1em;
+    outline: solid thick whitesmoke;
+}
+
+.overlay img {
+    width: auto;
+    height: auto;
+}
+
+.overlay h3 {
+    text-align: start;
+    background: none;
+    border: none;
+    margin: 0;
+}

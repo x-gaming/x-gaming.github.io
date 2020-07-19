@@ -1,0 +1,49 @@
+.explanation {
+    padding: 1em;
+    background-color: #313131;
+    border: solid medium black;
+    box-shadow: 5px 5px 12px whitesmoke;
+    border-radius: 0.3em;
+}
+
+.explanation h4 {
+    width: 40%;
+    background: linear-gradient(to right, rgb(10, 10, 10), rgba(255, 255, 255, 0.01));
+    padding: 0.2em;
+    border-radius: 0.3em;
+}
+
+.explanation li {
+    display: block;
+    padding: 0.8em;
+    margin: 0.2em;
+    border: solid medium black;
+    border-radius: 0.2em;
+}
+
+.explanation .header {
+    margin: 0.2em 0;
+    color: white;
+}
+
+.explanation .more {
+    display: none;
+    color: rgb(155, 155, 155);
+    margin: 0;
+}
+
+.more li {
+    border: unset;
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+}
+
+.more li span {
+    color: white;
+}
+
+.explanation ul li:hover .more{
+    position: relative;
+    display: block;
+}

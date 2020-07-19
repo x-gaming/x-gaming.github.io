@@ -1,0 +1,61 @@
+form input {
+    width: 100%;
+    padding: 1em;
+    margin: 0.2em 0;
+    outline: none;
+    font-weight: bold;
+    background-color: rgba(75, 74, 75, 0.4);
+}
+
+#btn_next {
+    background-color: green;
+}
+
+#btn_why {
+    background-color: blue;
+}
+
+main ol li {
+    display: none;
+    padding: 0.5em;
+    margin-right: 1em;
+    margin-bottom: 0.2em;
+    border-radius: 4px;
+    border: solid medium black;
+}
+
+#stats {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border: solid medium black;
+    border-radius: 5px;
+}
+
+#buttons {
+    grid-row-start: 1;
+    grid-column: 2;
+}
+
+.explanation {
+    margin: 0;
+    color: black;
+    background-color: rgb(180, 180, 180);
+    border-radius: 3px;
+    display: none;
+}
+
+#grid_wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+}
+
+.grid-item {
+    grid-column: 1;
+}
+
+#buttons input:disabled {
+    background-color: grey;
+}

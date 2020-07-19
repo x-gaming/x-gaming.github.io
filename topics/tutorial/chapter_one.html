@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kapitel 1</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/style_trip.css">
+    <script src="../../js/trip.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Kapitel HTML</h1>
+    </header>
+
+    <main id="grid_wrapper">
+        <div class="grid-item" id="section_one">
+            <h3>Die Dateien erstellen</h3>
+            <ol>
+                <li>
+                    Erstelle auf deinem Desktop einen neuen Ordner und nenne ihn "Html Tutorial"
+                    <p class="explanation">Dieser Ordner wird dein "Arbeitsplatz", hier wird alles gespeichert was deine
+                        Seite braucht.</p>
+                </li>
+                <li>
+                    Öffne diesen Ordner und erstelle einen neuen Ordner, diesen nennst du "html"
+                    <p class="explanation">Dieser Ordner ist nur zur besseren Übersicht wenn später mal noch CSS oder JS
+                        dazu kommt.</p>
+                </li>
+                <li>
+                    Öffne den Ordner und erstelle hier eine neue Textdatei
+                    <p class="explanation">Dies wird mal die Startseite, aber alles fängt mit einer normalen Textdatei
+                        an</p>
+                </li>
+                <li>
+                    Öffne diese Datei mit dem Texteditor deiner Wahl
+                    <p class="explanation">z.B. NotePad++</p>
+                </li>
+                <li>
+                    Speichere die Datei unter "Startseite.html", Wichtig ändere den Dateityp auf "Alle Dateien" bei
+                    manchen Editoren auch (*.*)
+                    <p class="explanation">Dieser Schritt macht die Datei schon funktionsfähig.</p>
+                </li>
+                <li>
+                    Öffne zum Test die Datei mit einem Browser deiner Wahl, du solltest eine weiße Seite sehen
+                    <p class="explanation">Und in der URL-Leiste steht der Pfad zur Datei.</p>
+                </li>
+            </ol>
+        </div>
+        <div class="grid-item" id="section_two">
+            <h3>Der erste HTML-Code</h3>
+            <ol>
+                <li>
+                    Öffne die Datei "Startseite.html" wieder mit dem Editor
+                    <p class="explanation">Diesmal aber um den ersten Html-Code zu schreiben.</p>
+                </li>
+                <li>
+                    Schreibe in die erste Zeile "&lt;!DOCTYPE html&gt;
+                    <p class="explanation">Diese Zeile validiert die Datei (macht sie gültig).</p>
+                </li>
+                <li>
+                    Schreibe in die zweite Zeile &lt;html&gt;
+                    <p class="explanation">Das sogennate "Wurzel-Element", dies ist der erste und letzte
+                        <code>tag</code> im Dokument.</p>
+                </li>
+                <li>
+                    Schreibe in die dritte Zeile &lt;head&gt;
+                    <p class="explanation">Definiert den Kopfteil der Seite, ist zwar nicht sichtbare aber wichtig für
+                        die Seite ansich.</p>
+                </li>
+                <li>Drücke einmal die "Tab-Taste" auf deiner Tastatur
+                    <p class="explanation">Da der <code>head-tag</code> noch nicht geschlossen wurde, wird der Platz für
+                        den End-Tag "freigehalten".</p>
+                </li>
+                <li>
+                    Schreibe &lt;meta charset="UTF-8"&gt;
+                    <p class="explanation">Stellt sicher das Umlaute richtig dargestellt werden können (Zeichensatz).
+                    </p>
+                </li>
+                <li>
+                    Schreibe in der Zeile darunter wieder mit Tabstop &lt;title&gt;Startseite&lt;/title&gt;
+                    <p class="explanation">Der Titel der Seite welcher im Browser-Tab angezeigt wird, Tabstop wieder
+                        weil <code>head</code> noch nicht geschlossen wurde.</p>
+                </li>
+                <li>Schreibe in der nächsten Zeile wieder ohne Tabstop &lt;/head&gt;
+                    <p class="explanation">Hier wird jetzt der Kopfteil abgeschlossen, deswegen kein Tabstop mehr und
+                        der <code>schließende end-tag</code>.</p>
+                </li>
+                <li>
+                    Schreibe in der nächsten Zeile &lt;body&gt;
+                    <p class="explanation">Öffnet den <code>body-tag</code>, dieser ist für alles sichtbare auf der
+                        Seite später zuständig.</p>
+                </li>
+                <li>Mache erstmal eine Leerzeile
+                    <p class="explanation">Da wir ab hier später weiter schreiben</p>
+                </li>
+                <li>
+                    Schreibe in der nächsten Zeile nun wieder &lt;/body&gt;
+                    <p class="explanation">Hier wird nun der <code>body-tag</code> geschlossen</p>
+                </li>
+                <li>
+                    Schreibe nun in der letzten Zeile &lt;/html&gt;
+                    <p class="explanation">Und noch den <code>head-tag</code> schließen, was auch gleichzeitg immer das
+                        letzte in einem Html-Dokument ist</p>
+                </li>
+            </ol>
+        </div>
+        <div class="grid-item" id="section_three">
+            <h3>Der erste Inhalt</h3>
+            <ol>
+                <li>
+                    Klicke in die freie Zeile zwischen den beiden <code>body-tags</code>
+                    <p class="explanation">Um nun etwas sichtbaren Inhalt hinzuzufügen.</p>
+                </li>
+                <li>
+                    Schreibe mit einem Tabstop &lt;header&gt;
+                    <p class="explanation">Dieser <code>tag</code> legt den Bereich für eine Kopfzeile fest.</p>
+                </li>
+                <li>
+                    Schreibe in die nächste Zeile mit zwei Tabstops &lt;h1&gt;Willkommen&lt;/h1&gt;
+                    <p class="explanation"> Da <code>body</code> und <code>header</code> noch nicht geschlossen wurden
+                        brauchen wir 2 Tabstops, der <code>tag h1</code> definiert eine Überschrift.</p>
+                </li>
+                <li>
+                    Schreibe in die nächste Zeile wieder mit einem Tabstop &lt;/header&gt; (die beiden
+                    <code>header-tags</code> sollten untereinander stehen)
+                    <p class="explanation">Da nun <code>header</code> wieder geschlossen wird brauchen wir auch den
+                        zweiten Tabstop nicht mehr.</p>
+                </li>
+                <li>
+                    Schreibe in die nächste Zeile wieder mit einem Tabstop &lt;main&gt;
+                    <p class="explanation">Da <code>body</code> immernoch nicht geschlossen wurde brauchen wir nur noch
+                        einen
+                        Tabstop, <code>main</code> definiert den Bereich für den Hauptinhalt.</p>
+                </li>
+                <li>
+                    Schreibe in die nächste Zeile mit zwei Tabstops &lt;p&gt;Hallo, das ist mein Erster
+                    Text&lt;/p&gt;
+                    <p class="explanation"><code>p</code> steht für "paragraph" also für einen Satz / Text, 2 Tabstops
+                        wegen den nicht geschlossenen <code>tags</code>.</p>
+                </li>
+                <li>
+                    Schreibe in die nächste Zeile wieder mit einem Tabstop &lt;/main&gt; (die beiden
+                    <code>main-tags</code> sollten untereinander stehen)
+                    <p class="explanation">Den Hauptinhalt wieder schließen.</p>
+                </li>
+                <li>
+                    Schreibe in die nächste Zeile wieder mit einem Tabstop &lt;footer&gt;
+                    <p class="explanation">Dieser <code>tag</code> definiert den Bereich für eine Fußzeile.</p>
+                </li>
+                <li>
+                    Schreibe in der nächsten Zeile mit zwei Tabstops &lt;a href="https://google.de"&gt;Link zu
+                    Google&lt;/a&gt;
+                    <p class="explanation">Der <code>tag a</code> erstellt einen Link, <code>href=""</code> gibt das
+                        Ziel an (in diesem Fall Google), dies ist einfach nur ein Beispiel da in der Fußzeile
+                        normalerweise diverse Links angegeben werden.
+                    </p>
+                </li>
+                <li>
+                    Schreibe in die nächste Zeile wieder mit einem Tabstop &lt;/footer&gt;
+                    <p class="explanation">Der <code>tag footer</code> muss natürlich auch wieder geschlossen werden.</p>
+                </li>
+            </ol>
+        </div>
+        <div class="grid-item" id="section_four">
+            <h3>Weiterer Inhalt</h3>
+            <ol>
+                <li>folgt noch...</li>
+                <p class="explanation"><a href="../../index.html" class="intern_link">hier geht es erstmal zurück</a></p>
+            </ol>
+        </div>
+        <div class="grid-item" id="section_five">
+            <h3>Weiterer Inhalt</h3>
+            <ol>
+                <li></li>
+            </ol>
+        </div>
+        <div id="buttons">
+            <div id="stats">
+                <p>Schritt:</p>
+                <p id="step">0</p>
+                <p>von:</p>
+                <p id="maxSteps">0</p>
+                <p>Teil:</p>
+                <p id="topic">0</p>
+            </div>
+
+            <form onclick="nextStep()">
+                <input id="btn_next" type="button" value="Weiter" title="Hab´s fertig wie gehts weiter?">
+            </form>
+            <form onclick="explain()">
+                <input id="btn_why" type="button" value="Erklärung" title="Warum?">
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
